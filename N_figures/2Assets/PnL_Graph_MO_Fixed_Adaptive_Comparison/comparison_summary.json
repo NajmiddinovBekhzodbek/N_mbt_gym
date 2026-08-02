@@ -1,0 +1,37 @@
+[
+    {
+        "rho":1.0,
+        "mean_trained":5.9291481741,
+        "std_trained":1.4235227474,
+        "mean_fixed":5.7680151699,
+        "std_fixed":1.4881452339
+    },
+    {
+        "rho":3.0,
+        "mean_trained":6.7431938052,
+        "std_trained":1.4964464058,
+        "mean_fixed":6.0237175698,
+        "std_fixed":1.7005350072
+    },
+    {
+        "rho":5.0,
+        "mean_trained":7.6260139919,
+        "std_trained":1.5074512689,
+        "mean_fixed":5.559429777,
+        "std_fixed":2.0546636601
+    },
+    {
+        "rho":7.0,
+        "mean_trained":8.9586466154,
+        "std_trained":1.5798110562,
+        "mean_fixed":4.371648389,
+        "std_fixed":2.4890559447
+    },
+    {
+        "rho":9.0,
+        "mean_trained":10.5591978537,
+        "std_trained":1.6263810927,
+        "mean_fixed":2.8444445775,
+        "std_fixed":2.5315066885
+    }
+]

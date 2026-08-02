@@ -1,0 +1,37 @@
+run_tag: PPO_2Assets_Trial20_100M
+trial_folder: PPO_2Assets_Trial20
+assets_tag: 2Assets
+asset_tag: Asset2
+use_best_model: False
+source_model_path: C:\Users\rmlab01\mbt_gym\N_SB_models\PPO_Checkpoints_2Assets\PPO_2Assets_Trial20\PPO_2Assets_Trial20_100M.zip
+obs_dim_detected: 11
+t_target: 0.5
+
+FILES
+delta_minus_file: PPO_2Assets_Trial20_100M_Asset2_delta_minus_inv_heatmap_t0.50.txt
+delta_plus_file: PPO_2Assets_Trial20_100M_Asset2_delta_plus_inv_heatmap_t0.50.txt
+figure_pdf: PPO_2Assets_Trial20_100M_Asset2_inv_heatmap_t0.50.pdf
+figure_png: PPO_2Assets_Trial20_100M_Asset2_inv_heatmap_t0.50.png
+
+GRID
+q_min: -10
+q_max: 10
+q_step: 1
+q_num_points: 21
+q_axis_note: Heatmaps use y-axis=q1, x-axis=q2.
+
+FIXED STATE VALUES
+If obs_dim == 3, only [q1,q2,t] was used. If obs_dim == 11, obs=[q1,q2,t,lambda1_bid,lambda1_ask,lambda2_bid,lambda2_ask,c1_bid,c1_ask,c2_bid,c2_ask].
+lambda1_bid: 21.63
+lambda1_ask: 21.63
+lambda2_bid: 22.44
+lambda2_ask: 22.44
+c1_bid: 4.0
+c1_ask: 4.0
+c2_bid: 4.44
+c2_ask: 4.44
+
+PLOT SETTINGS
+colormap: viridis
+vmin: 0.0
+vmax: 0.6042971014976501

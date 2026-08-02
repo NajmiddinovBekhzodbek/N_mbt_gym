@@ -1,0 +1,26 @@
+{
+  "label": "Const 1",
+  "rho": 1,
+  "run_tag": "Constant_delta1_rho1",
+  "policy": "constant_quote=1.0",
+  "reward_settings": {
+    "phi": 0.0,
+    "alpha": 0.2
+  },
+  "n_eval_episodes": 100000,
+  "summary_statistics": {
+    "n_episodes": 100000,
+    "mean": 0.32836523927007727,
+    "variance": 0.6057143190738709,
+    "std": 0.7782765055389189,
+    "sharpe_ratio": 0.42191333919645974,
+    "sem": 0.002461126406899635,
+    "ci95_low": 0.323541431512554,
+    "ci95_high": 0.33318904702760055,
+    "min": -1.0281985998153687,
+    "max": 5.521774768829346,
+    "q05": -0.5020387917757034,
+    "median": 0.0,
+    "q95": 1.857498341798782
+  }
+}

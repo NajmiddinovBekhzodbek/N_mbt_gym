@@ -1,0 +1,32 @@
+{
+  "label": "Linear-coupled",
+  "rho": 5,
+  "run_tag": "Linear_coupled_rho5",
+  "policy": "linear_inventory[coupled]",
+  "coefficients": {
+    "base": 0.5,
+    "steep": 2.0,
+    "gentle": 0.5,
+    "cross_weight": 1.0
+  },
+  "reward_settings": {
+    "phi": 0.0,
+    "alpha": 0.2
+  },
+  "n_eval_episodes": 100000,
+  "summary_statistics": {
+    "n_episodes": 100000,
+    "mean": -0.07811415701513809,
+    "variance": 0.2211686622989291,
+    "std": 0.4702857241070891,
+    "sharpe_ratio": -0.1660993583495438,
+    "sem": 0.0014871740392399576,
+    "ci95_low": -0.08102901813204841,
+    "ci95_high": -0.07519929589822777,
+    "min": -1.6232861280441284,
+    "max": 3.6253910064697266,
+    "q05": -0.5904928267002105,
+    "median": -0.20491261780261993,
+    "q95": 1.0139808237552626
+  }
+}

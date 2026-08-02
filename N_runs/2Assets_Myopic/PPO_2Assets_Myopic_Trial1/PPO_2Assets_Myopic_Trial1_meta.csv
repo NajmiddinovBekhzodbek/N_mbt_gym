@@ -1,0 +1,82 @@
+key,value
+run_name,PPO_2Assets_Myopic_Trial1
+tag,2Assets_Myopic
+created_at,2026-07-03T12:37:58.270689
+total_timesteps,100000000
+seeds.train_seed,123
+seeds.network_seed,789
+seeds.eval_seed,456
+versions.numpy,1.24.4
+versions.torch,2.2.2
+versions.gym,0.21.0
+versions.stable_baselines3,1.6.2
+versions.python,3.9.25 (main; Nov  3 2025; 22:29:32) \n[Clang 20.1.8 ]
+versions.platform,macOS-26.5.1-arm64-arm-64bit
+evaluation.callback_class,AccurateEvalCallback
+evaluation.eval_freq,500
+evaluation.n_eval_episodes,1000
+evaluation.deterministic,True
+evaluation.eval_seed,456
+baseline_policy.type,fixed_depth
+baseline_policy.fixed_depth,None
+baseline_policy.applies_to,all_assets_bid_ask
+env_global.terminal_time,1.0
+env_global.n_steps,100
+env_global.phi,0.005
+env_global.alpha,0.2
+env_global.num_assets,2
+env_global.num_trajectories,1000
+env_global.max_inventory,100
+env_global.normalise_action_space,False
+env_global.normalise_observation_space,False
+env_global.normalise_rewards,False
+env_global.reward_scaling,1.0
+env_global.baseline_mean_reward,None
+env_global.baseline_mean_reward_inferred,None
+env_global.baseline_fixed_depth,None
+env_global.state_indices,[1; 2; 3; 6; 7; 8; 9; 10; 11; 12; 13]
+env_global.initial_inventory_spec,(-1; 2)
+midprice_model.type,BrownianMotionMidpriceModel
+midprice_model.volatility,[0.1; 0.1]
+midprice_model.drift,[0.0; 0.0]
+midprice_model.initial_price,[100.0; 100.0]
+midprice_model.step_size,0.01
+midprice_model.terminal_time,1.0
+arrival_model.type,SynchronousHawkesArrivalModel
+arrival_model.baseline_arrival_rate,[[10.0; 10.0]; [12.0; 12.0]]
+arrival_model.mean_reversion_speed,[15.0; 18.0]
+arrival_model.self_jump_size,[3.0; 3.2]
+arrival_model.mutual_jump_size,[1.5; 1.6]
+arrival_model.synchrony_factor,[0.05; 0.05]
+arrival_model.cross_asset_influence,[[0.0; 0.05]; [0.05; 0.0]]
+arrival_model.step_size,0.01
+lob_depth_model.type,SynchronousLOBDepthModel
+lob_depth_model.c_baseline_depth,[[2.0; 2.0]; [2.5; 2.5]]
+lob_depth_model.c_mean_reversion_speed,[10.0; 12.0]
+lob_depth_model.c_self_jump_size,[0.6; 0.65]
+lob_depth_model.c_mutual_jump_size,[0.3; 0.32]
+lob_depth_model.c_synchrony_factor,[0.05; 0.05]
+lob_depth_model.c_cross_asset_influence,[[0.0; 0.05]; [0.05; 0.0]]
+lob_depth_model.step_size,0.01
+fill_probability_model.type,DynamicLOBExponentialFillFunction
+fill_probability_model.depends_on,lob_depth_model
+reward.type,CjMmCriterion
+reward.per_step_inventory_aversion,0.005
+reward.terminal_inventory_aversion,0.2
+reward.inventory_exponent,2.0
+ppo.policy,MyopicSymmetricActorCriticPolicy
+ppo.policy_kwargs,{'net_arch': [{'pi': [256; 256; 256]; 'vf': [256; 256; 256]}]}
+ppo.activation_fn,Tanh
+ppo.n_epochs,3
+ppo.batch_size,10000
+ppo.n_steps,100
+ppo.ent_coef,0.0
+ppo.gamma,1.0
+ppo.gae_lambda,0.95
+ppo.clip_range,<function constant_fn.<locals>.func at 0x1689488b0>
+ppo.lr_spec.type,callable
+ppo.lr_spec.function_name,lr_scheduler
+ppo.lr_spec.initial_lr,0.0003
+ppo.lr_spec.final_lr,3.0000000000000024e-05
+ppo.lr_spec.source,def lr_scheduler(progress: float) -> float:\n    reversed_progress = 1 - progress\n    initial_lr = 0.0003\n    final_lr = 0.00003\n    return initial_lr - (initial_lr - final_lr) * reversed_progress\n
+ppo.device,cpu

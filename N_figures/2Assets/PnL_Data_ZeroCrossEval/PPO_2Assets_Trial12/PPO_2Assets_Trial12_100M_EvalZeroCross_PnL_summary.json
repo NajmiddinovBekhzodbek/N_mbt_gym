@@ -1,0 +1,88 @@
+{
+  "run_tag": "PPO_2Assets_Trial12_100M",
+  "trial_folder": "PPO_2Assets_Trial12",
+  "assets_tag": "2Assets",
+  "source_model_path": "C:\\Users\\rmlab01\\mbt_gym\\N_SB_models\\PPO_Checkpoints_2Assets\\PPO_2Assets_Trial12\\PPO_2Assets_Trial12_100M.zip",
+  "trained_cross_asset_influence_label": 9.0,
+  "figure_dir": "C:\\Users\\rmlab01\\mbt_gym\\N_figures\\2Assets\\PnL_Graph_ZeroCrossEval\\PPO_2Assets_Trial12",
+  "data_dir": "C:\\Users\\rmlab01\\mbt_gym\\N_figures\\2Assets\\PnL_Data_ZeroCrossEval\\PPO_2Assets_Trial12",
+  "environment": {
+    "terminal_time": 1.0,
+    "n_steps": 100,
+    "num_assets": 2,
+    "num_trajectories_parallel": 1000,
+    "initial_inventory_override": null
+  },
+  "reward_settings": {
+    "phi_running_inventory_penalty": 0.0,
+    "alpha_terminal_inventory_penalty": 0.2
+  },
+  "dynamics_overrides": {
+    "cross_asset_influence": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ]
+    ],
+    "c_cross_asset_influence": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ]
+    ],
+    "sigma": null,
+    "initial_price": null,
+    "baseline_arrival_rate": null,
+    "mean_reversion_speed": null,
+    "self_jump_size": null,
+    "mutual_jump_size": null,
+    "synchrony_factor": null,
+    "c_baseline_depth": null,
+    "c_mean_reversion_speed": null,
+    "c_self_jump_size": null,
+    "c_mutual_jump_size": null,
+    "c_synchrony_factor": null
+  },
+  "seeds": {
+    "train_seed": 123,
+    "network_seed": 123,
+    "eval_seed": 456,
+    "note": "Only eval_seed affects the evaluation simulation. train_seed and network_seed are included for record-keeping."
+  },
+  "evaluation": {
+    "n_eval_episodes": 100000,
+    "deterministic_policy": true,
+    "counterfactual_note": "Both MO cross_asset_influence and LOB c_cross_asset_influence were set to zero for evaluation."
+  },
+  "files": {
+    "histogram_pdf": "PPO_2Assets_Trial12_100M_EvalZeroCross_PnL_histogram.pdf",
+    "histogram_png": "PPO_2Assets_Trial12_100M_EvalZeroCross_PnL_histogram.png",
+    "episode_rewards_txt": "PPO_2Assets_Trial12_100M_EvalZeroCross_PnL_episode_rewards.txt",
+    "episode_rewards_csv": "PPO_2Assets_Trial12_100M_EvalZeroCross_PnL_episode_rewards.csv",
+    "summary_txt": "PPO_2Assets_Trial12_100M_EvalZeroCross_PnL_summary.txt",
+    "summary_json": "PPO_2Assets_Trial12_100M_EvalZeroCross_PnL_summary.json"
+  },
+  "summary_statistics": {
+    "n_episodes": 100000,
+    "mean": 3.6657975503161153,
+    "variance_sample": 3.743928396757616,
+    "std_sample": 1.934923356817426,
+    "min": -12.307816505432129,
+    "max": 11.115396499633789,
+    "q01": -1.4444761383533478,
+    "q05": 0.43703963309526456,
+    "q25": 2.478520154953003,
+    "q50": 3.7319217920303345,
+    "q75": 4.939217567443848,
+    "q95": 6.707241320610046,
+    "q99": 7.952247009277342
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "run_tag": "PPO_2Assets_Trial1_100M",
+  "trial_folder": "PPO_2Assets_Trial1",
+  "asset_index": 1,
+  "t_target": 0.5,
+  "fixed_other_values": [
+    -10,
+    -5,
+    0,
+    5,
+    10
+  ],
+  "files": {
+    "figure_pdf": "PPO_2Assets_Trial1_100M_Asset2_line_slices_side_by_side_t0.50.pdf",
+    "figure_png": "PPO_2Assets_Trial1_100M_Asset2_line_slices_side_by_side_t0.50.png",
+    "data_csv": "PPO_2Assets_Trial1_100M_Asset2_line_slices_side_by_side_t0.50_data.csv"
+  }
+}

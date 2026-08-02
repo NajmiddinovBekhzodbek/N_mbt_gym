@@ -1,0 +1,67 @@
+run_tag: PPO_2Assets_Trial8_100M
+trial_folder: PPO_2Assets_Trial8
+assets_tag: 2Assets
+use_best_model: False
+source_model_path: C:\Users\rmlab01\mbt_gym\N_SB_models\PPO_Checkpoints_2Assets\PPO_2Assets_Trial8\PPO_2Assets_Trial8_100M.zip
+figure_dir: C:\Users\rmlab01\mbt_gym\N_figures\2Assets\PnL_Graph\PPO_2Assets_Trial8
+data_dir: C:\Users\rmlab01\mbt_gym\N_figures\2Assets\PnL_Data\PPO_2Assets_Trial8
+
+ENVIRONMENT
+terminal_time: 1.0
+n_steps: 100
+num_assets: 2
+num_trajectories_parallel: 1000
+initial_inventory_override: None
+
+REWARD SETTINGS
+phi_running_inventory_penalty: 0.0
+alpha_terminal_inventory_penalty: 0.2
+
+DYNAMICS OVERRIDES
+cross_asset_influence: [[0.0, 1.0], [1.0, 0.0]]
+c_cross_asset_influence: [[0.0, 0.0], [0.0, 0.0]]
+sigma: None
+initial_price: None
+baseline_arrival_rate: None
+mean_reversion_speed: None
+self_jump_size: None
+mutual_jump_size: None
+synchrony_factor: None
+c_baseline_depth: None
+c_mean_reversion_speed: None
+c_self_jump_size: None
+c_mutual_jump_size: None
+c_synchrony_factor: None
+
+SEEDS
+train_seed: 123
+network_seed: 123
+eval_seed: 456
+note: Only eval_seed affects the evaluation simulation. train_seed and network_seed are included for record-keeping.
+
+EVALUATION
+n_eval_episodes: 100000
+deterministic_policy: True
+
+FILES
+histogram_pdf: PPO_2Assets_Trial8_100M_PnL_histogram.pdf
+histogram_png: PPO_2Assets_Trial8_100M_PnL_histogram.png
+episode_rewards_txt: PPO_2Assets_Trial8_100M_PnL_episode_rewards.txt
+episode_rewards_csv: PPO_2Assets_Trial8_100M_PnL_episode_rewards.csv
+summary_txt: PPO_2Assets_Trial8_100M_PnL_summary.txt
+summary_json: PPO_2Assets_Trial8_100M_PnL_summary.json
+
+SUMMARY STATISTICS
+n_episodes: 100000
+mean: 5.929148174061105
+variance_sample: 2.02641701223128
+std_sample: 1.4235227473529461
+min: -1.2030552625656128
+max: 12.21258544921875
+q01: 2.6835780191421508
+q05: 3.626136136054993
+q25: 4.966272592544556
+q50: 5.907031297683716
+q75: 6.873746991157532
+q95: 8.303479671478268
+q99: 9.338925085067748

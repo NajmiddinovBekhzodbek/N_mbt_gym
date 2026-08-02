@@ -1,0 +1,29 @@
+[
+    {
+        "trial":"PPO_2Assets_Trial10",
+        "label":"$\\rho=5,\\ \\rho_c=0$",
+        "mean":7.6260139919,
+        "std":1.5074512689,
+        "variance":2.2724093281,
+        "sharpe":5.0588792813,
+        "n":100000
+    },
+    {
+        "trial":"PPO_2Assets_Trial16",
+        "label":"$\\rho=0,\\ \\rho_c=5$",
+        "mean":1.978834343,
+        "std":0.6959067361,
+        "variance":0.4842861854,
+        "sharpe":2.8435338248,
+        "n":100000
+    },
+    {
+        "trial":"PPO_2Assets_Trial18",
+        "label":"$\\rho=5,\\ \\rho_c=3$",
+        "mean":2.7530344805,
+        "std":0.7058813308,
+        "variance":0.4982684532,
+        "sharpe":3.9001378281,
+        "n":100000
+    }
+]

@@ -1,0 +1,42 @@
+[
+    {
+        "comparison":"1.00 vs 3.00",
+        "t_stat":-124.6378905747,
+        "welch_df":199500.9001362567,
+        "p_value":0.0,
+        "mean_diff":-0.8140456312,
+        "se_diff":0.0065312854,
+        "mean_diff_ci95_low":-0.8268467929,
+        "mean_diff_ci95_high":-0.8012444694
+    },
+    {
+        "comparison":"3.00 vs 5.00",
+        "t_stat":-131.4314211636,
+        "welch_df":199987.2638222105,
+        "p_value":0.0,
+        "mean_diff":-0.8828201866,
+        "se_diff":0.0067169645,
+        "mean_diff_ci95_low":-0.8959852748,
+        "mean_diff_ci95_high":-0.8696550985
+    },
+    {
+        "comparison":"5.00 vs 7.00",
+        "t_stat":-192.9890413801,
+        "welch_df":199559.9699634098,
+        "p_value":0.0,
+        "mean_diff":-1.3326326235,
+        "se_diff":0.0069052243,
+        "mean_diff_ci95_low":-1.3461666966,
+        "mean_diff_ci95_high":-1.3190985504
+    },
+    {
+        "comparison":"7.00 vs 9.00",
+        "t_stat":-223.2282862418,
+        "welch_df":199829.4338841118,
+        "p_value":0.0,
+        "mean_diff":-1.6005512383,
+        "se_diff":0.0071700198,
+        "mean_diff_ci95_low":-1.6146043041,
+        "mean_diff_ci95_high":-1.5864981726
+    }
+]

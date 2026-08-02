@@ -1,0 +1,71 @@
+{
+  "label": "2 Assets (base)",
+  "run_tag": "PPO_2Assets_Trial1_100M",
+  "trial_folder": "PPO_2Assets_Trial1",
+  "assets_tag": "2Assets",
+  "source_model_path": "/Users/bekhzodbeknajmiddinov/Library/CloudStorage/Dropbox/N_mbt_gym/N_SB_models/PPO_Checkpoints_2Assets/PPO_2Assets_Trial1/PPO_2Assets_Trial1_100M.zip",
+  "environment": {
+    "terminal_time": 1.0,
+    "n_steps": 100,
+    "num_assets": 2,
+    "num_trajectories_parallel": 1000,
+    "initial_inventory": [
+      -1,
+      2
+    ]
+  },
+  "reward_settings": {
+    "phi_running_inventory_penalty": 0.0,
+    "alpha_terminal_inventory_penalty": 0.2
+  },
+  "dynamics": {
+    "cross_asset_influence": [
+      [
+        0.0,
+        0.05
+      ],
+      [
+        0.05,
+        0.0
+      ]
+    ],
+    "c_cross_asset_influence": [
+      [
+        0.0,
+        0.05
+      ],
+      [
+        0.05,
+        0.0
+      ]
+    ]
+  },
+  "seeds": {
+    "train_seed": 123,
+    "network_seed": 789,
+    "eval_seed": 456
+  },
+  "evaluation": {
+    "n_eval_episodes": 100000,
+    "deterministic_policy": true
+  },
+  "summary_statistics": {
+    "n_episodes": 100000,
+    "mean": 5.449167798406333,
+    "variance": 1.8438426463933824,
+    "std": 1.3578816761387504,
+    "sharpe_ratio": 4.012991628181842,
+    "sem": 0.004293998889605565,
+    "ci95_low": 5.440751560582706,
+    "ci95_high": 5.45758403622996,
+    "min": -1.236706256866455,
+    "max": 11.613872528076172,
+    "q01": 2.4212716746330263,
+    "q05": 3.2739964365959167,
+    "q25": 4.5163527727127075,
+    "median": 5.423200607299805,
+    "q75": 6.345326066017151,
+    "q95": 7.733793067932126,
+    "q99": 8.711460466384883
+  }
+}

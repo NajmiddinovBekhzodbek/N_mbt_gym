@@ -1,0 +1,40 @@
+run_tag: PPO_2Assets_Trial19_100M
+trial_folder: PPO_2Assets_Trial19
+asset_index: 0
+asset_tag: Asset1
+use_best_model: False
+source_model_path: C:\Users\rmlab01\mbt_gym\N_SB_models\PPO_Checkpoints_2Assets\PPO_2Assets_Trial19\PPO_2Assets_Trial19_100M.zip
+obs_dim_detected: 11
+
+FILES
+delta_minus_file: PPO_2Assets_Trial19_100M_Asset1_delta_minus.txt
+delta_plus_file: PPO_2Assets_Trial19_100M_Asset1_delta_plus.txt
+figure_pdf: PPO_2Assets_Trial19_100M_Asset1.pdf
+figure_png: PPO_2Assets_Trial19_100M_Asset1.png
+
+GRID
+q_min: -10
+q_max: 10
+q_step: 1
+q_num_points: 21
+t_min: 0.0
+t_max: 1.0
+t_num_points: 101
+t_num_intervals: 100
+
+FIXED STATE VALUES
+If obs_dim == 3, only [q1,q2,t] was used. If obs_dim == 11, obs=[q1,q2,t,lambda1_bid,lambda1_ask,lambda2_bid,lambda2_ask,c1_bid,c1_ask,c2_bid,c2_ask]. q sweeping rule: Asset1 varies q1 with q2 frozen at 0; Asset2 varies q2 with q1 frozen at 0.
+lambda1_bid: 31.65
+lambda1_ask: 31.65
+lambda2_bid: 24.68
+lambda2_ask: 24.68
+c1_bid: 4.84
+c1_ask: 4.84
+c2_bid: 4.61
+c2_ask: 4.61
+
+PLOT SETTINGS
+colormap: viridis
+vmin: 0.0
+vmax: 0.768357515335083
+num_levels: 60

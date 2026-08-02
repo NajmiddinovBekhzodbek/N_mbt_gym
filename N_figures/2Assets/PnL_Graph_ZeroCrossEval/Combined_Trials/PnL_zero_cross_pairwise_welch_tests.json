@@ -1,0 +1,62 @@
+[
+    {
+        "comparison":"1.00 vs 3.00",
+        "H0":"mean(1.00) = mean(3.00)",
+        "H1":"mean(1.00) > mean(3.00)",
+        "mean_x":5.546032313,
+        "mean_y":5.0774117767,
+        "mean_diff":0.4686205362,
+        "t_stat":72.1773516949,
+        "welch_df":198637.073086107,
+        "p_value_one_sided":0.0,
+        "p_value_two_sided":0.0,
+        "ci_95_low":0.4558952235,
+        "ci_95_high":0.481345849,
+        "conclusion":"Reject H0 -> mean(1.00) > mean(3.00)"
+    },
+    {
+        "comparison":"3.00 vs 5.00",
+        "H0":"mean(3.00) = mean(5.00)",
+        "H1":"mean(3.00) > mean(5.00)",
+        "mean_x":5.0774117767,
+        "mean_y":4.6430388995,
+        "mean_diff":0.4343728772,
+        "t_stat":63.8821377095,
+        "welch_df":199965.3119937374,
+        "p_value_one_sided":0.0,
+        "p_value_two_sided":0.0,
+        "ci_95_low":0.4210459094,
+        "ci_95_high":0.4476998451,
+        "conclusion":"Reject H0 -> mean(3.00) > mean(5.00)"
+    },
+    {
+        "comparison":"5.00 vs 7.00",
+        "H0":"mean(5.00) = mean(7.00)",
+        "H1":"mean(5.00) > mean(7.00)",
+        "mean_x":4.6430388995,
+        "mean_y":4.486107298,
+        "mean_diff":0.1569316014,
+        "t_stat":21.2421977804,
+        "welch_df":196042.2297255727,
+        "p_value_one_sided":2.525134324e-100,
+        "p_value_two_sided":5.050268649e-100,
+        "ci_95_low":0.1424519186,
+        "ci_95_high":0.1714112843,
+        "conclusion":"Reject H0 -> mean(5.00) > mean(7.00)"
+    },
+    {
+        "comparison":"7.00 vs 9.00",
+        "H0":"mean(7.00) = mean(9.00)",
+        "H1":"mean(7.00) > mean(9.00)",
+        "mean_x":4.486107298,
+        "mean_y":3.6657975503,
+        "mean_diff":0.8203097477,
+        "t_stat":99.0375797357,
+        "welch_df":198339.4512436913,
+        "p_value_one_sided":0.0,
+        "p_value_two_sided":0.0,
+        "ci_95_low":0.8040757326,
+        "ci_95_high":0.8365437628,
+        "conclusion":"Reject H0 -> mean(7.00) > mean(9.00)"
+    }
+]

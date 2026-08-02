@@ -1,0 +1,68 @@
+run_tag: PPO_2Assets_Trial11_100M
+trial_folder: PPO_2Assets_Trial11
+assets_tag: 2Assets
+source_model_path: C:\Users\rmlab01\mbt_gym\N_SB_models\PPO_Checkpoints_2Assets\PPO_2Assets_Trial11\PPO_2Assets_Trial11_100M.zip
+trained_cross_asset_influence_label: 7.0
+figure_dir: C:\Users\rmlab01\mbt_gym\N_figures\2Assets\PnL_Graph_ZeroCrossEval\PPO_2Assets_Trial11
+data_dir: C:\Users\rmlab01\mbt_gym\N_figures\2Assets\PnL_Data_ZeroCrossEval\PPO_2Assets_Trial11
+
+ENVIRONMENT
+terminal_time: 1.0
+n_steps: 100
+num_assets: 2
+num_trajectories_parallel: 1000
+initial_inventory_override: None
+
+REWARD SETTINGS
+phi_running_inventory_penalty: 0.0
+alpha_terminal_inventory_penalty: 0.2
+
+DYNAMICS OVERRIDES
+cross_asset_influence: [[0.0, 0.0], [0.0, 0.0]]
+c_cross_asset_influence: [[0.0, 0.0], [0.0, 0.0]]
+sigma: None
+initial_price: None
+baseline_arrival_rate: None
+mean_reversion_speed: None
+self_jump_size: None
+mutual_jump_size: None
+synchrony_factor: None
+c_baseline_depth: None
+c_mean_reversion_speed: None
+c_self_jump_size: None
+c_mutual_jump_size: None
+c_synchrony_factor: None
+
+SEEDS
+train_seed: 123
+network_seed: 123
+eval_seed: 456
+note: Only eval_seed affects the evaluation simulation. train_seed and network_seed are included for record-keeping.
+
+EVALUATION
+n_eval_episodes: 100000
+deterministic_policy: True
+counterfactual_note: Both MO cross_asset_influence and LOB c_cross_asset_influence were set to zero for evaluation.
+
+FILES
+histogram_pdf: PPO_2Assets_Trial11_100M_EvalZeroCross_PnL_histogram.pdf
+histogram_png: PPO_2Assets_Trial11_100M_EvalZeroCross_PnL_histogram.png
+episode_rewards_txt: PPO_2Assets_Trial11_100M_EvalZeroCross_PnL_episode_rewards.txt
+episode_rewards_csv: PPO_2Assets_Trial11_100M_EvalZeroCross_PnL_episode_rewards.csv
+summary_txt: PPO_2Assets_Trial11_100M_EvalZeroCross_PnL_summary.txt
+summary_json: PPO_2Assets_Trial11_100M_EvalZeroCross_PnL_summary.json
+
+SUMMARY STATISTICS
+n_episodes: 100000
+mean: 4.486107298029827
+variance_sample: 3.1165706353987908
+std_sample: 1.7653811586733306
+min: -10.534976959228516
+max: 12.687557220458984
+q01: -0.4197514706850052
+q05: 1.56544691324234
+q25: 3.4533475637435913
+q50: 4.553845643997192
+q75: 5.62811803817749
+q95: 7.2042576313018785
+q99: 8.361883182525634

@@ -1,0 +1,87 @@
+{
+  "run_tag": "PPO_2Assets_Trial10_100M",
+  "trial_folder": "PPO_2Assets_Trial10",
+  "assets_tag": "2Assets",
+  "use_best_model": false,
+  "source_model_path": "C:\\Users\\rmlab01\\mbt_gym\\N_SB_models\\PPO_Checkpoints_2Assets\\PPO_2Assets_Trial10\\PPO_2Assets_Trial10_100M.zip",
+  "figure_dir": "C:\\Users\\rmlab01\\mbt_gym\\N_figures\\2Assets\\PnL_Graph\\PPO_2Assets_Trial10",
+  "data_dir": "C:\\Users\\rmlab01\\mbt_gym\\N_figures\\2Assets\\PnL_Data\\PPO_2Assets_Trial10",
+  "environment": {
+    "terminal_time": 1.0,
+    "n_steps": 100,
+    "num_assets": 2,
+    "num_trajectories_parallel": 1000,
+    "initial_inventory_override": null
+  },
+  "reward_settings": {
+    "phi_running_inventory_penalty": 0.0,
+    "alpha_terminal_inventory_penalty": 0.2
+  },
+  "dynamics_overrides": {
+    "cross_asset_influence": [
+      [
+        0.0,
+        5.0
+      ],
+      [
+        5.0,
+        0.0
+      ]
+    ],
+    "c_cross_asset_influence": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ]
+    ],
+    "sigma": null,
+    "initial_price": null,
+    "baseline_arrival_rate": null,
+    "mean_reversion_speed": null,
+    "self_jump_size": null,
+    "mutual_jump_size": null,
+    "synchrony_factor": null,
+    "c_baseline_depth": null,
+    "c_mean_reversion_speed": null,
+    "c_self_jump_size": null,
+    "c_mutual_jump_size": null,
+    "c_synchrony_factor": null
+  },
+  "seeds": {
+    "train_seed": 123,
+    "network_seed": 123,
+    "eval_seed": 456,
+    "note": "Only eval_seed affects the evaluation simulation. train_seed and network_seed are included for record-keeping."
+  },
+  "evaluation": {
+    "n_eval_episodes": 100000,
+    "deterministic_policy": true
+  },
+  "files": {
+    "histogram_pdf": "PPO_2Assets_Trial10_100M_PnL_histogram.pdf",
+    "histogram_png": "PPO_2Assets_Trial10_100M_PnL_histogram.png",
+    "episode_rewards_txt": "PPO_2Assets_Trial10_100M_PnL_episode_rewards.txt",
+    "episode_rewards_csv": "PPO_2Assets_Trial10_100M_PnL_episode_rewards.csv",
+    "summary_txt": "PPO_2Assets_Trial10_100M_PnL_summary.txt",
+    "summary_json": "PPO_2Assets_Trial10_100M_PnL_summary.json"
+  },
+  "summary_statistics": {
+    "n_episodes": 100000,
+    "mean": 7.6260139918543395,
+    "variance_sample": 2.2724093281195885,
+    "std_sample": 1.5074512689037707,
+    "min": -0.05483998358249664,
+    "max": 14.831734657287598,
+    "q01": 4.127958178520203,
+    "q05": 5.151173067092896,
+    "q25": 6.620609879493713,
+    "q50": 7.622717380523682,
+    "q75": 8.636281490325928,
+    "q95": 10.107941579818725,
+    "q99": 11.14798057556152
+  }
+}

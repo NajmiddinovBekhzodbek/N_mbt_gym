@@ -1,0 +1,21 @@
+{
+  "run_tag": "PPO_2Assets_Trial1_100M",
+  "trial_folder": "PPO_2Assets_Trial1",
+  "assets_tag": "2Assets",
+  "source_model_path": "C:\\Users\\rmlab01\\mbt_gym\\N_SB_models\\PPO_Checkpoints_2Assets\\PPO_2Assets_Trial1\\PPO_2Assets_Trial1_100M.zip",
+  "t_target": 0.5,
+  "fixed_other_values": [
+    -10,
+    -5,
+    0,
+    5,
+    10
+  ],
+  "q_min": -10,
+  "q_max": 10,
+  "q_num_points": 21,
+  "files": {
+    "figure_pdf": "PPO_2Assets_Trial1_100M_LineSlices_t0.50_Asset1_Asset2.pdf",
+    "figure_png": "PPO_2Assets_Trial1_100M_LineSlices_t0.50_Asset1_Asset2.png"
+  }
+}
