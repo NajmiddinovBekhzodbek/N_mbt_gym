@@ -1,7 +1,5 @@
 .DS_Store
 
-# Editor / tooling config (not part of the project)
-.claude/
 
 # Transient notebook export folder (the notebooks/ folder itself IS tracked)
 TMP_NOTEBOOKS
